@@ -41,14 +41,16 @@ spring:
         stream:
             kafka:
                 binder:
-                    brokers: localhost
-                    zk-nodes: localhost
+                    brokers: 35.173.201.96
+                    zk-nodes: 35.173.201.96
             bindings:
+                singleOutput:
+                    contentType: application/json
                 output:
                     destination: topic-simlife
     data:
         mongodb:
-            uri: mongodb://localhost:27017
+            uri: mongodb://54.174.79.164:27017
             database: CrawlerConfiguration
         elasticsearch:
             cluster-name:
