@@ -1,9 +1,9 @@
 version: '2'
 services:
-    crawlerworker-elasticsearch:
+    crawlerconfiguration-elasticsearch:
         image: elasticsearch:5.6.5
         # volumes:
-        #     - ~/volumes/simlife/CrawlerWorker/elasticsearch/:/usr/share/elasticsearch/data/
+        #     - ~/volumes/simlife/CrawlerConfiguration/elasticsearch/:/usr/share/elasticsearch/data/
         ports:
             - 9200:9200
             - 9300:9300

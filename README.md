@@ -1,4 +1,4 @@
-# CrawlerWorker
+# CrawlerConfiguration
 This application was generated using Simlife 5.0.3, you can find documentation and help at [https://www.simlife.io/documentation-archive/v5.0.3](https://www.simlife.io/documentation-archive/v5.0.3).
 
 This is a "microservice" application intended to be part of a microservice architecture, please refer to the [Doing microservices with Simlife][] page of the documentation for more information.
@@ -18,7 +18,7 @@ For further instructions on how to develop with Simlife, have a look at [Using S
 
 ## Building for production
 
-To optimize the CrawlerWorker application for production, run:
+To optimize the CrawlerConfiguration application for production, run:
 
     ./mvnw -Pprod clean package
 

@@ -35,7 +35,7 @@ public class AsyncConfiguration implements AsyncConfigurer {
         executor.setCorePoolSize(simLifeProperties.getAsync().getCorePoolSize());
         executor.setMaxPoolSize(simLifeProperties.getAsync().getMaxPoolSize());
         executor.setQueueCapacity(simLifeProperties.getAsync().getQueueCapacity());
-        executor.setThreadNamePrefix("crawler-worker-Executor-");
+        executor.setThreadNamePrefix("crawler-configuration-Executor-");
         return new ExceptionHandlingAsyncTaskExecutor(executor);
     }
 

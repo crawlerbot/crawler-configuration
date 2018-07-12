@@ -17,12 +17,12 @@ eureka:
     client:
         enabled: false
     instance:
-        appname: CrawlerWorker
-        instanceId: CrawlerWorker:${spring.application.instance-id:${random.value}}
+        appname: CrawlerConfiguration
+        instanceId: CrawlerConfiguration:${spring.application.instance-id:${random.value}}
 
 spring:
     application:
-        name: CrawlerWorker
+        name: CrawlerConfiguration
     cloud:
         stream:
             kafka:
@@ -36,7 +36,7 @@ spring:
         mongodb:
             host: localhost
             port: 0
-            database: CrawlerWorker
+            database: CrawlerConfiguration
     mail:
         host: localhost
     messages:
@@ -77,7 +77,7 @@ simlife:
     security:
         authentication:
             jwt:
-                secret: c9145fd09577bd87f3bf08ebc61e51e5653da186
+                secret: a1bd603d12fe55e65418ddbb02f6d7190056352d
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration

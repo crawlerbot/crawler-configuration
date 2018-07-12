@@ -1,6 +1,6 @@
 package io.github.crawlerbot.web.rest.errors;
 
-import io.github.crawlerbot.CrawlerWorkerApp;
+import io.github.crawlerbot.CrawlerConfigurationApp;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see ExceptionTranslator
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = CrawlerWorkerApp.class)
+@SpringBootTest(classes = CrawlerConfigurationApp.class)
 public class ExceptionTranslatorIntTest {
 
     @Autowired

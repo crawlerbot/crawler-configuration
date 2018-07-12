@@ -49,7 +49,7 @@ spring:
     data:
         mongodb:
             uri: mongodb://localhost:27017
-            database: CrawlerWorker
+            database: CrawlerConfiguration
         elasticsearch:
             cluster-name:
             cluster-nodes: localhost:9300
@@ -75,7 +75,7 @@ spring:
 
 # ===================================================================
 # To enable SSL, generate a certificate using:
-# keytool -genkey -alias crawlerworker -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+# keytool -genkey -alias crawlerconfiguration -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
 #
 # You can also use Let's Encrypt:
 # https://maximilian-boehm.com/hp2121/Create-a-Java-Keystore-JKS-from-Let-s-Encrypt-Certificates.htm
@@ -88,7 +88,7 @@ spring:
 #        key-store: keystore.p12
 #        key-store-password: <your-password>
 #        key-store-type: PKCS12
-#        key-alias: crawlerworker
+#        key-alias: crawlerconfiguration
 # ===================================================================
 server:
     port: 8081
@@ -119,7 +119,7 @@ simlife:
                 token-validity-in-seconds: 86400
                 token-validity-in-seconds-for-remember-me: 2592000
     mail: # specific Simlife mail property, for standard properties see MailProperties
-        from: CrawlerWorker@localhost
+        from: CrawlerConfiguration@localhost
         base-url: http://127.0.0.1:8081
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx:

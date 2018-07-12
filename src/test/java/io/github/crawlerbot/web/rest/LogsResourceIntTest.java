@@ -1,6 +1,6 @@
 package io.github.crawlerbot.web.rest;
 
-import io.github.crawlerbot.CrawlerWorkerApp;
+import io.github.crawlerbot.CrawlerConfigurationApp;
 import io.github.crawlerbot.web.rest.vm.LoggerVM;
 import ch.qos.logback.classic.AsyncAppender;
 import ch.qos.logback.classic.LoggerContext;
@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see LogsResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = CrawlerWorkerApp.class)
+@SpringBootTest(classes = CrawlerConfigurationApp.class)
 public class LogsResourceIntTest {
 
     private MockMvc restLogsMockMvc;

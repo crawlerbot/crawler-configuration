@@ -1,7 +1,7 @@
 {
-  "name": "crawler-worker",
+  "name": "crawler-configuration",
   "version": "0.0.0",
-  "description": "Description for CrawlerWorker",
+  "description": "Description for CrawlerConfiguration",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

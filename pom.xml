@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.crawlerbot</groupId>
-    <artifactId>crawler-worker</artifactId>
+    <artifactId>crawler-configuration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Crawler Worker</name>
+    <name>Crawler Configuration</name>
 
     <repositories>
         <!-- simlife-needle-maven-repository -->
@@ -596,7 +596,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>crawlerworker</repository>
+                    <repository>crawlerconfiguration</repository>
                     <contextDirectory>${project.build.directory}</contextDirectory>
                 </configuration>
             </plugin>

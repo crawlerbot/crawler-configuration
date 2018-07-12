@@ -21,18 +21,18 @@ import java.util.Collection;
 @SpringBootApplication
 @EnableConfigurationProperties({ApplicationProperties.class})
 @EnableDiscoveryClient
-public class CrawlerWorkerApp {
+public class CrawlerConfigurationApp {
 
-    private static final Logger log = LoggerFactory.getLogger(CrawlerWorkerApp.class);
+    private static final Logger log = LoggerFactory.getLogger(CrawlerConfigurationApp.class);
 
     private final Environment env;
 
-    public CrawlerWorkerApp(Environment env) {
+    public CrawlerConfigurationApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes CrawlerWorker.
+     * Initializes CrawlerConfiguration.
      * <p>
      * Spring profiles can be configured with a program arguments --spring.profiles.active=your-active-profile
      * <p>
@@ -57,7 +57,7 @@ public class CrawlerWorkerApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(CrawlerWorkerApp.class);
+        SpringApplication app = new SpringApplication(CrawlerConfigurationApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";

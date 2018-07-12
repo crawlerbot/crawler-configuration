@@ -6,7 +6,7 @@
     },
     "simlifeVersion": "5.0.3",
     "applicationType": "microservice",
-    "baseName": "CrawlerWorker",
+    "baseName": "CrawlerConfiguration",
     "packageName": "io.github.crawlerbot",
     "packageFolder": "io/github/crawlerbot",
     "serverPort": "8081",
@@ -22,7 +22,7 @@
     "serviceDiscoveryType": "eureka",
     "buildTool": "maven",
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "c9145fd09577bd87f3bf08ebc61e51e5653da186",
+    "jwtSecretKey": "a1bd603d12fe55e65418ddbb02f6d7190056352d",
     "enableTranslation": true,
     "testFrameworks": [
       "gatling",
