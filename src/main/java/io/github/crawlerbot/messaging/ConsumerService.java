@@ -13,6 +13,7 @@ public class ConsumerService {
 
     @StreamListener(ConsumerChannel.CHANNEL)
     public void consume(Greeting greeting) {
+        log.info("start Received message.....");
         log.info("Received message: {}.", greeting.getMessage());
     }
 }

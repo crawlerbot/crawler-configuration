@@ -40,14 +40,32 @@ spring:
     cloud:
         stream:
             kafka:
+                streams:
+                    binder:
+                        configuration:
+                            commit:
+                                interval:
+                                    ms: 1000
+
+                bindings:
+                    output:
+                        producer:
+                          configuration:
+                            max:
+                              block:
+                                ms: 5000
                 binder:
                     brokers: 35.173.201.96
                     zk-nodes: 35.173.201.96
+
             bindings:
                 singleOutput:
                     contentType: application/json
-                output:
-                    destination: topic-simlife
+                messageChannel:
+                    destination: greetings
+                    content-type: application/json
+                subscribableChannel:
+                    destination: greetings
     data:
         mongodb:
             uri: mongodb://54.174.79.164:27017
@@ -106,13 +124,13 @@ simlife:
         version: V_1_1 # To use HTTP/2 you will need SSL support (see above the "server.ssl" configuration)
     # CORS is disabled by default on microservices, as you should access them through a gateway.
     # If you want to enable it, please uncomment the configuration below.
-    # cors:
-        # allowed-origins: "*"
-        # allowed-methods: "*"
-        # allowed-headers: "*"
-        # exposed-headers: "Authorization,Link,X-Total-Count"
-        # allow-credentials: true
-        # max-age: 1800
+    cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+        allowed-headers: "*"
+        exposed-headers: "Authorization,Link,X-Total-Count"
+        allow-credentials: true
+        max-age: 1800
     security:
         authentication:
             jwt:
