@@ -31,7 +31,7 @@ eureka:
         status-page-url-path: ${management.endpoints.web.base-path}/info
         health-check-url-path: ${management.endpoints.web.base-path}/health
         prefer-ip-address: false
-        eureka.instance.ip-address: 140.203.155.19
+        ip-address: 140.203.155.19
 
         metadata-map:
             zone: primary # This is needed for the load balancer
