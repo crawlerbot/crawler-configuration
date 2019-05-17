@@ -1,9 +1,5 @@
 # CrawlerConfiguration
-This application was generated using Simlife 5.0.3, you can find documentation and help at [https://www.simlife.io/documentation-archive/v5.0.3](https://www.simlife.io/documentation-archive/v5.0.3).
 
-This is a "microservice" application intended to be part of a microservice architecture, please refer to the [Doing microservices with Simlife][] page of the documentation for more information.
-
-This application is configured for Service Discovery and Configuration with the Simlife-Registry. On launch, it will refuse to start if it is not able to connect to the Simlife-Registry at [http://localhost:8761](http://localhost:8761). For more information, read our documentation on [Service Discovery and Configuration with the Simlife-Registry][].
 
 ## Development
 
@@ -67,16 +63,4 @@ For more information refer to [Using Docker and Docker-Compose][], this page als
 
 ## Continuous Integration (optional)
 
-To configure CI for your project, run the ci-cd sub-generator (`simlife ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
 
-[Simlife Homepage and latest documentation]: https://www.simlife.io
-[Simlife 5.0.3 archive]: https://www.simlife.io/documentation-archive/v5.0.3
-[Doing microservices with Simlife]: https://www.simlife.io/documentation-archive/v5.0.3/microservices-architecture/
-[Using Simlife in development]: https://www.simlife.io/documentation-archive/v5.0.3/development/
-[Service Discovery and Configuration with the Simlife-Registry]: https://www.simlife.io/documentation-archive/v5.0.3/microservices-architecture/#simlife-registry
-[Using Docker and Docker-Compose]: https://www.simlife.io/documentation-archive/v5.0.3/docker-compose
-[Using Simlife in production]: https://www.simlife.io/documentation-archive/v5.0.3/production/
-[Running tests page]: https://www.simlife.io/documentation-archive/v5.0.3/running-tests/
-[Setting up Continuous Integration]: https://www.simlife.io/documentation-archive/v5.0.3/setting-up-ci/
-
-[Gatling]: http://gatling.io/
